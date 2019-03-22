@@ -24,6 +24,7 @@ const BackgroundImage = styled.div`
     z-index: -5;
     opacity: 0.6;
     filter: blur(3px);
+    -webkit-filter:blur(3px);
 `;
 
 export {
