@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
-const Avatar = styled.div`
+const Avatar = styled(NavLink)`
     max-width: 100px; height: 100px;
     border-radius: 50px;
     flex: 1 0 100px;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HeaderWrapper, * as HeaderStyled from '../../../components/App/Header';
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
 
@@ -11,12 +12,16 @@ class Header extends Component {
         const navItems = this.props.navItems;
         return (
             <HeaderWrapper>
-                <HeaderStyled.Avatar image='/images/avatar.jpg' />
+                <HeaderStyled.Avatar to='/' image='/images/avatar.jpg' />
                 {
                     navItems.map((item, index) =>{
                         return (
                             <HeaderStyled.ButtonWrapper key={index}>
-                                <HeaderStyled.NavButton data-toggle="present" onClick={this.handleClick}>{item}</HeaderStyled.NavButton>
+                                <NavLink to={item.link}>
+                                    <HeaderStyled.NavButton data-toggle="present" onClick={this.handleClick}>
+                                        {item.title}
+                                    </HeaderStyled.NavButton>
+                                </NavLink>
                             </HeaderStyled.ButtonWrapper>
                         );
                     })
