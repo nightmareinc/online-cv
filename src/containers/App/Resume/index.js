@@ -9,7 +9,6 @@ class Resume extends Component {
     }
 
     componentWillMount(){
-        console.log('loading',this.state.loading)
         setTimeout(() => {
             Axios.get(`${URL}/resume`)
             .then( res => {
