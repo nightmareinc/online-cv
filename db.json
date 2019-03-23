@@ -1,0 +1,56 @@
+{
+    "resume": {
+        "jobTitle": "Front-End Developer",
+        "bio": "somethings catchy about yourself",
+        "contact": {
+            "email": "hossein.azadi14@outlook.com",
+            "website": "http://hosseinazadi.ir",
+            "phoneNumber": "+989362348268",
+            "address": "Tehran, Tehran Janatabad"
+        },
+        "education": [{
+            "form": 2001,
+            "to": 2006,
+            "name": "molasadra highschool",
+            "degree": "collage degree",
+            "field": "math and physics",
+            "note": ""
+        }],
+        "experience": [{
+            "from": 2014,
+            "to": 2016,
+            "company": "seller.ir",
+            "jobTItle": "fornt-end developer",
+            "jobDescription": "doing this and that"
+        }],
+        "skills": [{
+            "name": "javascript",
+            "level": "advanced"
+        }],
+        "language": [{
+            "title": "english",
+            "level": "fluent"
+        }],
+        "passion": [{
+            "title": "travelling",
+            "icon": "fab-travel",
+            "img": null
+        }]
+    },
+    "portfolio": [{
+        "title": "hosseinazadi.ir",
+        "desciption": "i did it, you're in it",
+        "techStack": [{
+            "title": "HTML5",
+            "image": "/public/images/tech/html5.png"
+        },{
+            "title": "CSS3",
+            "image": "/public/images/tech/css.png"
+        },{
+            "title": "jquery",
+            "image": "/public/images/tech/jq.png"
+        }],
+        "date": "deploy date",
+        "duration": "2 weeks"
+    }]
+}
