@@ -3,10 +3,6 @@ import HeaderWrapper, * as HeaderStyled from '../../../components/App/Header';
 
 class Header extends Component {
 
-    handleClick = (e) => {
-        console.log(e.target.dataset.toggle);
-    }
-    
     render() {
         const navItems = this.props.navItems;
         return (
@@ -15,17 +11,21 @@ class Header extends Component {
                 {
                     navItems.map((item, index) =>{
                         return (
-                            <HeaderStyled.ButtonWrapper key={index} data-toggle="present" onClick={this.handleClick}>
-                                <HeaderStyled.NavLink to={item.link}>
-                                    {item.title}
-                                </HeaderStyled.NavLink>
-                            </HeaderStyled.ButtonWrapper>
+                            <HeaderStyled.NavLink key={index} to={item.link} activeStyle={{
+                                position: 'absolute',
+                                top: '130px',
+                                left: '50%',
+                                transform: 'translateX(-50%) scale(1.2)',
+                                backgroundColor: 'rgba(16, 19, 18, 0.8)'
+                            }}>
+                                {item.title}
+                            </HeaderStyled.NavLink>
                         );
                     })
                 }
             </HeaderWrapper>
         );
-    }
+    };
 }
 
 export default Header;

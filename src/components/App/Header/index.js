@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import ButtonWrapper from './ButtonWrapper';
 import NavLink from './NavLink';
 import Avatar from './Avatar';
 
@@ -10,12 +9,13 @@ const Header = styled.header`
     justify-content: flex-start;
     align-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     padding: 20px;
 `;
 
 export {
     Header as default,
-    ButtonWrapper,
     NavLink,
     Avatar
 };
