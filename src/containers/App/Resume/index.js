@@ -8,17 +8,36 @@ class Resume extends Component {
         loading: true
     }
 
+    cancelToken = Axios.CancelToken;
+    source = this.cancelToken.source();
+
+    requestResume() {
+        Axios.get(`${URL}/resume`,{
+            cancelToken: this.source.token
+        })
+        .then( res => {
+            this.setState({
+                resumeData: res.data,
+                loading: false
+            });
+        }).catch(err => {
+            if (Axios.isCancel(err)){
+                console.log('req was cancelled: >> ',err);
+            } else {
+                console.error('some other error happened',err);
+            }
+        });
+    };
+
     componentWillMount(){
         setTimeout(() => {
-            Axios.get(`${URL}/resume`)
-            .then( res => {
-                this.setState({
-                    resumeData: res.data,
-                    loading: false
-                });
-            });
+            this.requestResume();
         }, 2000);
         
+    };
+
+    componentWillUnmount(){
+        this.source.cancel('COMPONENT CLEANUP');
     };
 
     render() {
