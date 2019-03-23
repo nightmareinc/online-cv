@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import ButtonWrapper from './ButtonWrapper';
-import NavButton from './NavButton';
+import NavLink from './NavLink';
 import Avatar from './Avatar';
 
 const Header = styled.header`
@@ -16,6 +16,6 @@ const Header = styled.header`
 export {
     Header as default,
     ButtonWrapper,
-    NavButton,
+    NavLink,
     Avatar
 };
