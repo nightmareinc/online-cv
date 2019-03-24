@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import Intro from './Intro';
+import Box from '../common/Box'
 
-const Home = styled.div`
-    width: 100%;
+const Home = styled(Box)`
+    margin: 20px;
 `;
 
 export {
