@@ -1,5 +1,9 @@
 const navItems = [
     {
+        title: 'Home',
+        link: '/'
+    },
+    {
         title: 'Resume',
         link: '/resume'
     },

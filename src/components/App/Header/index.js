@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import NavLink from './NavLink';
-import Avatar from './Avatar';
 
 const Header = styled.header`
     display: flex;
@@ -12,10 +11,10 @@ const Header = styled.header`
     flex-wrap: wrap;
     flex-direction: row;
     padding: 20px;
+    padding-bottom: 10px !important;
 `;
 
 export {
     Header as default,
-    NavLink,
-    Avatar
+    NavLink
 };

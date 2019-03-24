@@ -7,15 +7,10 @@ class Header extends Component {
         const navItems = this.props.navItems;
         return (
             <HeaderWrapper>
-                <HeaderStyled.Avatar to='/' image='/images/avatar.jpg' />
                 {
                     navItems.map((item, index) =>{
                         return (
-                            <HeaderStyled.NavLink key={index} to={item.link} activeStyle={{
-                                position: 'absolute',
-                                top: '130px',
-                                left: '50%',
-                                transform: 'translateX(-50%) scale(1.2)',
+                            <HeaderStyled.NavLink key={index} exact to={item.link} activeStyle={{
                                 backgroundColor: 'rgba(16, 19, 18, 0.8)'
                             }}>
                                 {item.title}
