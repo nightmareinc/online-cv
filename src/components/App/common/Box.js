@@ -5,6 +5,7 @@ const Box = styled.div`
     border-radius: 25px;
     padding: 20px;
     background-color: rgba(16,19,18,0.36);
+    margin: 20px;
     margin-top: 0 !important;
 `;
 
