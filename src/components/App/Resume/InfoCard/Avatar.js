@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 const Avatar = styled.div`
-    max-width: 100px; height: 100px;
+    width: 100px; height: 100px;
     position: relative;
+    float: left;
 
-    border-radius: 50px;
+    border-radius: 5px;
     margin-right: 20px;
 
     background-color: white;

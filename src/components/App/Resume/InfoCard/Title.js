@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-const Title = styled.span`
-    font-size: 17px;
+const Title = styled.div`
+    font-size: 20px;
     direction: ltr;
-    font-weight: 500;
+    font-weight: 600;
 
     &::after {
         content: ':';

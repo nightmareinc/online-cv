@@ -8,8 +8,8 @@ import Description from './Description';
 import Name from './Name';
 
 const InfoCard = styled(Card)`
-    border: 1px solid red;
     flex-basis: 50%;
+    color: #d3d6db;
 `;
 
 export {

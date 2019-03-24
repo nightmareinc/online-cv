@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-const Name = styled.span`
-    font-size: 13px;
-    color: blue;
+const Name = styled.div`
+    font-size: 38px;
+    font-weight: 600;
+    border-left: 2px solid black;
 `;
 
 export default Name;
