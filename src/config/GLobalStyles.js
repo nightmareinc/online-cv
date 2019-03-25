@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
        padding: 0;
        background-color: #101312;
        height: 100vh;
-       font-family: "Raleway";
+       font-family: "pt sans";
    }
    button {
        outline: none !important;
