@@ -1,13 +1,34 @@
 {
     "resume": {
-        "jobTitle": "Front-End Developer",
-        "bio": "somethings catchy about yourself",
-        "contact": {
-            "email": "hossein.azadi14@outlook.com",
-            "website": "http://hosseinazadi.ir",
-            "phoneNumber": "+989362348268",
-            "address": "Tehran, Tehran Janatabad"
+        "info": {
+            "firstName": "Hossein",
+            "lastName": "Azadi",
+            "jobTitle": "Front-End Developer",
+            "bio": "somethings catchy about yourself",
+            "image": "/images/avatar.jpg"
         },
+        "contact": [
+            {
+                "icon": ["fab","telegram-plane"],
+                "text": "@hosseinNM",
+                "link": "https://telegram.me/hosseinNM"
+            },
+            {
+                "icon": ["fas","envelope"],
+                "text": "hossein.azadi14@outlook.com",
+                "link": "mailto:hossein.azadi14@outlook.com"
+            },
+            {
+                "icon": ["fas","phone"],
+                "text": "+989362348268",
+                "link": "tel:+989362348268"
+            },
+            {
+                "icon": ["fas","map-marker-alt"],
+                "text": "Tehran, Tehran Janatabad",
+                "link": ""
+            }
+        ],
         "education": [{
             "form": 2001,
             "to": 2006,
