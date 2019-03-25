@@ -6,6 +6,7 @@ import Footer from '../containers/App/Footer';
 import GlobalStyles, { BackgroundImage } from '../config/GLobalStyles';
 import theme from '../config/themes';
 import navItems from '../config/navItems';
+import '../config/FontAwesomeLibrary';
 
 const Layout = (props) => {
     return (
