@@ -5,6 +5,8 @@ import ResumeWrapper from '../../../components/App/Resume';
 import Loader from '../../../components/App/common/Loader';
 import InfoCardTemplate from './templates/InfoCard.template';
 import ContactCardTemplate from './templates/ContactCard.template';
+import EducationCardTemplate from './templates/EducationCard.template';
+import ExperienceCardTemplate from './templates/ExperienceCard.template';
 
 class Resume extends Component {
     state = {
@@ -48,6 +50,10 @@ class Resume extends Component {
                     return <InfoCardTemplate key={index} data={item[1]} />;
                 case 'contact':
                     return <ContactCardTemplate key={index} data={item[1]} />;
+                case 'education':
+                    return <EducationCardTemplate key={index} data={item[1]} />;
+                case 'experience':
+                    return <ExperienceCardTemplate key={index} data={item[1]} />;
                 default:
                     break;
             }
