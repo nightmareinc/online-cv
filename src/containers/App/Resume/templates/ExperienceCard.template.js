@@ -2,8 +2,8 @@ import React from 'react';
 import ExperienceCardWrapper, * as ExpCard from '../../../../components/App/Resume/ExperienceCard';
 
 const ExperienceList = ({data}) => {
-    return data.map(item=>(
-        <ExpCard.SectionListWrapper>
+    return data.map((item,index)=>(
+        <ExpCard.SectionListWrapper key={index}>
             <ExpCard.SectionTitle>
                 {item.jobTitle}
             </ExpCard.SectionTitle>

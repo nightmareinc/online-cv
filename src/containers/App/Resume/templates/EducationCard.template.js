@@ -2,8 +2,8 @@ import React from 'react';
 import EducationCardWrapper, * as EduCard from '../../../../components/App/Resume/EducationCard';
 
 const EducationTemplate = ({data}) => {
-    return data.map(item => (
-        <EducationCardWrapper>
+    return data.map((item,index) => (
+        <EducationCardWrapper key={index}>
             <EduCard.Title>
                 Education
             </EduCard.Title>
