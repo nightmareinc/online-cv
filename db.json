@@ -30,19 +30,37 @@
             }
         ],
         "education": [{
-            "form": 2001,
-            "to": 2006,
-            "name": "molasadra highschool",
-            "degree": "collage degree",
-            "field": "math and physics",
-            "note": ""
+            "begin": 2014,
+            "end": 2018,
+            "name": "sayyed jamaleddin asadabadi university - University of Eyvanakey",
+            "degree": "Bachelor",
+            "field": "IT engineering",
+            "note": "I studied IT for 4 years while i was doing freelance jobs such as, SMM automation, automated CMS, managing Ecommerce websites, article translation and etc. to earn money and learn more, then i reached a point that i was not satesfied with university and i decided to drop out and start my career."
         }],
         "experience": [{
-            "from": 2014,
-            "to": 2016,
+            "begin": "March 2016",
+            "end": "June 2016",
+            "company": "Kajoor",
+            "jobTitle": "Designer",
+            "jobDescription": "my main role was designing a logo a business card and editting product photos"
+        },{
+            "begin": "July 2016",
+            "end": "Oct 2016",
+            "company": "happy kitcken",
+            "jobTitle": "Design & SMM Automation",
+            "jobDescription": "my main role was designing a logo form a small business and also co-developing a SMM automation tool (front-end app development with angular 1.6.4)"
+        },{
+            "begin": "Oct 2016",
+            "end": "Oct 2017",
             "company": "seller.ir",
-            "jobTItle": "fornt-end developer",
-            "jobDescription": "doing this and that"
+            "jobTitle": "front-end developer",
+            "jobDescription": "front-end development with Jquery and expanding business layer on a multi-layer inventroy management system"
+        },{
+            "begin": "Oct 2017",
+            "end": "March 2018",
+            "company": "Manzoomeh Negaran Corp.",
+            "jobTitle": "front-end developer",
+            "jobDescription": "front-end development JavaScript and Jquery, expanding a CRM Admin Dashboard with new features, Migrating old Admin Dashboard Pages with New ones."
         }],
         "skills": [{
             "name": "javascript",
