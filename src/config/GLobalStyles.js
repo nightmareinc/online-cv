@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
        padding: 0;
        background-color: #101312;
        height: 100vh;
-       font-family: "pt sans";
+       font-family: "Roboto";
    }
    button {
        outline: none !important;
@@ -18,11 +18,12 @@ const GlobalStyles = createGlobalStyle`
 
 const BackgroundImage = styled.div`
     height: 100vh; width: 100%;
-    position: absolute;
+    position: fixed;
     color: white;
     top: 0; left: 0;
     background-image: url('/images/bg2.jpg');
     background-size: 100% auto;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     z-index: -5;
     opacity: 0.6;
