@@ -5,6 +5,7 @@ const Title = styled.div`
     direction: ltr;
     font-weight: 200;
     text-transform: uppercase;
+    margin-bottom: 10px;
 
     &::after {
         content: ':';
