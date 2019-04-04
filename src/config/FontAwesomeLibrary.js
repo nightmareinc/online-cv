@@ -3,7 +3,12 @@ import {
     faEnvelope,
     faMapMarkerAlt,
     faGlobe,
-    faPhone
+    faPhone,
+    faHiking,
+    faLeaf,
+    faGamepad,
+    faPalette,
+    faMusic
 } from '@fortawesome/free-solid-svg-icons';
 import {
     faTelegramPlane
@@ -14,5 +19,10 @@ library.add(
     faMapMarkerAlt,
     faGlobe,
     faPhone,
-    faTelegramPlane
+    faTelegramPlane,
+    faHiking,
+    faLeaf,
+    faGamepad,
+    faPalette,
+    faMusic
 );

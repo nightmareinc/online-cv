@@ -110,8 +110,24 @@
             "level": 1
         }],
         "passion": [{
-            "title": "travelling",
-            "icon": "fab-travel",
+            "title": "Travelling",
+            "icon":  ["fas","hiking"],
+            "img": null
+        },{
+            "title": "Gaming",
+            "icon": ["fas","gamepad"],
+            "img": null
+        },{
+            "title": "Nature",
+            "icon": ["fas","leaf"],
+            "img": null
+        },{
+            "title": "Music",
+            "icon": ["fas","music"],
+            "img": null
+        },{
+            "title": "Painting",
+            "icon": ["fas","palette"],
             "img": null
         }]
     },

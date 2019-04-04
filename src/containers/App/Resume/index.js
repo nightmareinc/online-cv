@@ -8,6 +8,7 @@ import ContactCardTemplate from './templates/ContactCard.template';
 import EducationCardTemplate from './templates/EducationCard.template';
 import ExperienceCardTemplate from './templates/ExperienceCard.template';
 import SkillsCardTemplate from './templates/SkillsCard.template';
+import PassionCardTemplate from './templates/PassionCard.template';
 
 class Resume extends Component {
     state = {
@@ -59,6 +60,8 @@ class Resume extends Component {
                     return <SkillsCardTemplate key={index} cardTitle="skills" data={item[1]} />;
                 case 'language':
                     return <SkillsCardTemplate key={index} cardTitle="languages" data={item[1]} />;
+                case 'passion':
+                    return <PassionCardTemplate key={index} cardTitle="passions" data={item[1]} />;
                 default:
                     break;
             }
