@@ -63,12 +63,51 @@
             "jobDescription": "front-end development JavaScript and Jquery, expanding a CRM Admin Dashboard with new features, Migrating old Admin Dashboard Pages with New ones."
         }],
         "skills": [{
-            "name": "javascript",
-            "level": "advanced"
+            "name": "HTML",
+            "level": 4
+        },{
+            "name": "CSS",
+            "level": 4
+        },{
+            "name": "JavaScript",
+            "level": 3
+        },{
+            "name": "ReactJS",
+            "level": 3
+        },{
+            "name": "Jquery",
+            "level": 4
+        },{
+            "name": "Webpack",
+            "level": 3
+        },{
+            "name": "Redux",
+            "level": 2
+        },{
+            "name": "NodeJS",
+            "level": 2
+        },{
+            "name": "MongoDB",
+            "level": 1
+        },{
+            "name": "MSSQL",
+            "level": 2
+        },{
+            "name": "Adobe Photoshop CC",
+            "level": 3
+        },{
+            "name": "Adobe XD",
+            "level": 3
         }],
         "language": [{
-            "title": "english",
-            "level": "fluent"
+            "name": "English",
+            "level": 3
+        },{
+            "name": "Persian",
+            "level": 4
+        },{
+            "name": "German",
+            "level": 1
         }],
         "passion": [{
             "title": "travelling",
