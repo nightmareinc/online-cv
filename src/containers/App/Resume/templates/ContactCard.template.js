@@ -15,7 +15,7 @@ const ContactCardTemplate = (props) => {
     return (
         <ContactCardWrapper>
             <ContactCard.Title>
-                Contact
+                {props.cardTitle}
             </ContactCard.Title>
             <ContactCard.ContactItems>
                 {renderContactList(props.data)}

@@ -23,11 +23,11 @@ const ExperienceList = ({data}) => {
     ));
 };
 
-const ExperienceCardTemplate = ({data}) => {
+const ExperienceCardTemplate = ({data,cardTitle}) => {
     return (
         <ExperienceCardWrapper>
             <ExpCard.Title>
-                Experience
+                {cardTitle}
             </ExpCard.Title>
             <ExperienceList data={data} />
         </ExperienceCardWrapper>

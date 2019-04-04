@@ -1,11 +1,11 @@
 import React from 'react';
 import EducationCardWrapper, * as EduCard from '../../../../components/App/Resume/EducationCard';
 
-const EducationTemplate = ({data}) => {
+const EducationTemplate = ({data,cardTitle}) => {
     return data.map((item,index) => (
         <EducationCardWrapper key={index}>
             <EduCard.Title>
-                Education
+                {cardTitle}
             </EduCard.Title>
             <EduCard.SectionTitle>
                 {item.name}
