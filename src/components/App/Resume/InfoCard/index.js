@@ -6,9 +6,7 @@ import Sub from './Sub';
 import Description from './Description';
 import Name from './Name';
 
-const InfoCard = styled(Card)`
-    flex-basis: 50%;
-`;
+const InfoCard = styled(Card)``;
 
 export {
     InfoCard as default,

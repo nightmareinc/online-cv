@@ -5,7 +5,7 @@ const Card = styled.section`
     border-left: 5px solid rgba(16, 19, 18, 0.8);
     color: #d3d6db;
     margin-bottom: 10px;
-    flex-basis: 50%;
+    width: 50%;
     
     & * {
         color: #d3d6db;
