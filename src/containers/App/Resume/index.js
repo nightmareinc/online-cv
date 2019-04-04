@@ -7,6 +7,7 @@ import InfoCardTemplate from './templates/InfoCard.template';
 import ContactCardTemplate from './templates/ContactCard.template';
 import EducationCardTemplate from './templates/EducationCard.template';
 import ExperienceCardTemplate from './templates/ExperienceCard.template';
+import SkillsCardTemplate from './templates/SkillsCard.template';
 
 class Resume extends Component {
     state = {
@@ -47,13 +48,17 @@ class Resume extends Component {
         return Object.entries(data).map((item,index) => {
             switch (item[0]) {
                 case 'info':
-                    return <InfoCardTemplate key={index} data={item[1]} />;
+                    return <InfoCardTemplate key={index} cardTitle={null} data={item[1]} />;
                 case 'contact':
-                    return <ContactCardTemplate key={index} data={item[1]} />;
+                    return <ContactCardTemplate key={index} cardTitle="contact" data={item[1]} />;
                 case 'education':
-                    return <EducationCardTemplate key={index} data={item[1]} />;
+                    return <EducationCardTemplate key={index} cardTitle="education" data={item[1]} />;
                 case 'experience':
-                    return <ExperienceCardTemplate key={index} data={item[1]} />;
+                    return <ExperienceCardTemplate key={index} cardTitle="experience" data={item[1]} />;
+                case 'skills':
+                    return <SkillsCardTemplate key={index} cardTitle="skills" data={item[1]} />;
+                case 'language':
+                    return <SkillsCardTemplate key={index} cardTitle="languages" data={item[1]} />;
                 default:
                     break;
             }
