@@ -1,150 +1,131 @@
 {
-    "resume": {
-        "info": {
-            "firstName": "Hossein",
-            "lastName": "Azadi",
-            "jobTitle": "Front-End Developer",
-            "bio": "somethings catchy about yourself",
-            "image": "/images/avatar.jpg"
-        },
-        "contact": [
-            {
-                "icon": ["fab","telegram-plane"],
-                "text": "@hosseinNM",
-                "link": "https://telegram.me/hosseinNM"
-            },
-            {
-                "icon": ["fas","envelope"],
-                "text": "hossein.azadi14@outlook.com",
-                "link": "mailto:hossein.azadi14@outlook.com"
-            },
-            {
-                "icon": ["fas","phone"],
-                "text": "+989362348268",
-                "link": "tel:+989362348268"
-            },
-            {
-                "icon": ["fas","map-marker-alt"],
-                "text": "Tehran, Tehran Janatabad",
-                "link": ""
-            }
-        ],
-        "education": [{
-            "begin": 2014,
-            "end": 2018,
-            "name": "sayyed jamaleddin asadabadi university - University of Eyvanakey",
-            "degree": "Bachelor",
-            "field": "IT engineering",
-            "note": "I studied IT for 4 years while i was doing freelance jobs such as, SMM automation, automated CMS, managing Ecommerce websites, article translation and etc. to earn money and learn more, then i reached a point that i was not satesfied with university and i decided to drop out and start my career."
-        }],
-        "experience": [{
-            "begin": "March 2016",
-            "end": "June 2016",
-            "company": "Kajoor",
-            "jobTitle": "Designer",
-            "jobDescription": "my main role was designing a logo a business card and editting product photos"
-        },{
-            "begin": "July 2016",
-            "end": "Oct 2016",
-            "company": "happy kitcken",
-            "jobTitle": "Design & SMM Automation",
-            "jobDescription": "my main role was designing a logo form a small business and also co-developing a SMM automation tool (front-end app development with angular 1.6.4)"
-        },{
-            "begin": "Oct 2016",
-            "end": "Oct 2017",
-            "company": "seller.ir",
-            "jobTitle": "front-end developer",
-            "jobDescription": "front-end development with Jquery and expanding business layer on a multi-layer inventroy management system"
-        },{
-            "begin": "Oct 2017",
-            "end": "March 2018",
-            "company": "Manzoomeh Negaran Corp.",
-            "jobTitle": "front-end developer",
-            "jobDescription": "front-end development JavaScript and Jquery, expanding a CRM Admin Dashboard with new features, Migrating old Admin Dashboard Pages with New ones."
-        }],
-        "skills": [{
-            "name": "HTML",
-            "level": 4
-        },{
-            "name": "CSS",
-            "level": 4
-        },{
-            "name": "JavaScript",
-            "level": 3
-        },{
-            "name": "ReactJS",
-            "level": 3
-        },{
-            "name": "Jquery",
-            "level": 4
-        },{
-            "name": "Webpack",
-            "level": 3
-        },{
-            "name": "Redux",
-            "level": 2
-        },{
-            "name": "NodeJS",
-            "level": 2
-        },{
-            "name": "MongoDB",
-            "level": 1
-        },{
-            "name": "MSSQL",
-            "level": 2
-        },{
-            "name": "Adobe Photoshop CC",
-            "level": 3
-        },{
-            "name": "Adobe XD",
-            "level": 3
-        }],
-        "language": [{
-            "name": "English",
-            "level": 3
-        },{
-            "name": "Persian",
-            "level": 4
-        },{
-            "name": "German",
-            "level": 1
-        }],
-        "passion": [{
-            "title": "Travelling",
-            "icon":  ["fas","hiking"],
-            "img": null
-        },{
-            "title": "Gaming",
-            "icon": ["fas","gamepad"],
-            "img": null
-        },{
-            "title": "Nature",
-            "icon": ["fas","leaf"],
-            "img": null
-        },{
-            "title": "Music",
-            "icon": ["fas","music"],
-            "img": null
-        },{
-            "title": "Painting",
-            "icon": ["fas","palette"],
-            "img": null
-        }]
+    "info": {
+        "firstName": "Hossein",
+        "lastName": "Azadi",
+        "jobTitle": "Front-End Developer",
+        "bio": "somethings catchy about yourself",
+        "image": "/images/avatar.jpg"
     },
-    "portfolio": [{
-        "title": "hosseinazadi.ir",
-        "desciption": "i did it, you're in it",
-        "techStack": [{
-            "title": "HTML5",
-            "image": "/public/images/tech/html5.png"
-        },{
-            "title": "CSS3",
-            "image": "/public/images/tech/css.png"
-        },{
-            "title": "jquery",
-            "image": "/public/images/tech/jq.png"
-        }],
-        "date": "deploy date",
-        "duration": "2 weeks"
+    "contact": [{
+            "icon": ["fab", "telegram-plane"],
+            "text": "@hosseinNM",
+            "link": "https://telegram.me/hosseinNM"
+        },
+        {
+            "icon": ["fas", "envelope"],
+            "text": "hossein.azadi14@outlook.com",
+            "link": "mailto:hossein.azadi14@outlook.com"
+        },
+        {
+            "icon": ["fas", "phone"],
+            "text": "+989362348268",
+            "link": "tel:+989362348268"
+        },
+        {
+            "icon": ["fas", "map-marker-alt"],
+            "text": "Tehran, Tehran Janatabad",
+            "link": ""
+        }
+    ],
+    "education": [{
+        "begin": 2014,
+        "end": 2018,
+        "name": "sayyed jamaleddin asadabadi university - University of Eyvanakey",
+        "degree": "Bachelor",
+        "field": "IT engineering",
+        "note": "I studied IT for 4 years while i was doing freelance jobs such as, SMM automation, automated CMS, managing Ecommerce websites, article translation and etc. to earn money and learn more, then i reached a point that i was not satesfied with university and i decided to drop out and start my career."
+    }],
+    "experience": [{
+        "begin": "March 2016",
+        "end": "June 2016",
+        "company": "Kajoor",
+        "jobTitle": "Designer",
+        "jobDescription": "my main role was designing a logo a business card and editting product photos"
+    }, {
+        "begin": "July 2016",
+        "end": "Oct 2016",
+        "company": "happy kitcken",
+        "jobTitle": "Design & SMM Automation",
+        "jobDescription": "my main role was designing a logo form a small business and also co-developing a SMM automation tool (front-end app development with angular 1.6.4)"
+    }, {
+        "begin": "Oct 2016",
+        "end": "Oct 2017",
+        "company": "seller.ir",
+        "jobTitle": "front-end developer",
+        "jobDescription": "front-end development with Jquery and expanding business layer on a multi-layer inventroy management system"
+    }, {
+        "begin": "Oct 2017",
+        "end": "March 2018",
+        "company": "Manzoomeh Negaran Corp.",
+        "jobTitle": "front-end developer",
+        "jobDescription": "front-end development JavaScript and Jquery, expanding a CRM Admin Dashboard with new features, Migrating old Admin Dashboard Pages with New ones."
+    }],
+    "skills": [{
+        "name": "HTML",
+        "level": 4
+    }, {
+        "name": "CSS",
+        "level": 4
+    }, {
+        "name": "JavaScript",
+        "level": 3
+    }, {
+        "name": "ReactJS",
+        "level": 3
+    }, {
+        "name": "Jquery",
+        "level": 4
+    }, {
+        "name": "Webpack",
+        "level": 3
+    }, {
+        "name": "Redux",
+        "level": 2
+    }, {
+        "name": "NodeJS",
+        "level": 2
+    }, {
+        "name": "MongoDB",
+        "level": 1
+    }, {
+        "name": "MSSQL",
+        "level": 2
+    }, {
+        "name": "Adobe Photoshop CC",
+        "level": 3
+    }, {
+        "name": "Adobe XD",
+        "level": 3
+    }],
+    "language": [{
+        "name": "English",
+        "level": 3
+    }, {
+        "name": "Persian",
+        "level": 4
+    }, {
+        "name": "German",
+        "level": 1
+    }],
+    "passion": [{
+        "title": "Travelling",
+        "icon": ["fas", "hiking"],
+        "img": null
+    }, {
+        "title": "Gaming",
+        "icon": ["fas", "gamepad"],
+        "img": null
+    }, {
+        "title": "Nature",
+        "icon": ["fas", "leaf"],
+        "img": null
+    }, {
+        "title": "Music",
+        "icon": ["fas", "music"],
+        "img": null
+    }, {
+        "title": "Painting",
+        "icon": ["fas", "palette"],
+        "img": null
     }]
 }
