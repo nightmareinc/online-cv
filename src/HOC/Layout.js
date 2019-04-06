@@ -16,7 +16,6 @@ const Layout = (props) => {
                 <BackgroundImage />
                 <Header navItems={navItems} />
                 { props.children }
-                <Footer />
             </>
         </ThemeProvider>
     );
