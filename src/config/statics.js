@@ -1,4 +1,4 @@
-const URL = "http://localhost:3001";
+const URL = "/api";
 
 export {
     URL
