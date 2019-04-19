@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "json-server": "json-server --watch db.json --port 3001"
+    "json-server": "json-server --watch db.dev.json --port 3001 --routes routes.json"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +32,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "proxy": "http://localhost:3001/"
 }
