@@ -49,19 +49,19 @@ class Resume extends Component {
         return Object.entries(data).map((item,index) => {
             switch (item[0]) {
                 case 'info':
-                    return <InfoCardTemplate key={index} cardTitle={null} data={item[1]} />;
+                    return <InfoCardTemplate order={1} key={index} cardTitle={null} data={item[1]} />;
                 case 'contact':
-                    return <ContactCardTemplate key={index} cardTitle="contact" data={item[1]} />;
+                    return <ContactCardTemplate order={2} key={index} cardTitle="contact" data={item[1]} />;
                 case 'education':
-                    return <EducationCardTemplate key={index} cardTitle="education" data={item[1]} />;
+                    return <EducationCardTemplate order={5} key={index} cardTitle="education" data={item[1]} />;
                 case 'experience':
-                    return <ExperienceCardTemplate key={index} cardTitle="experience" data={item[1]} />;
+                    return <ExperienceCardTemplate order={4} key={index} cardTitle="experience" data={item[1]} />;
                 case 'skills':
-                    return <SkillsCardTemplate key={index} cardTitle="skills" data={item[1]} />;
+                    return <SkillsCardTemplate order={3} key={index} cardTitle="skills" data={item[1]} />;
                 case 'language':
-                    return <SkillsCardTemplate key={index} cardTitle="languages" data={item[1]} />;
+                    return <SkillsCardTemplate order={6} key={index} cardTitle="languages" data={item[1]} />;
                 case 'passion':
-                    return <PassionCardTemplate key={index} cardTitle="passions" data={item[1]} />;
+                    return <PassionCardTemplate order={7} key={index} cardTitle="passions" data={item[1]} />;
                 default:
                     break;
             }

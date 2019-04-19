@@ -6,7 +6,8 @@ import Sub from './Sub';
 import Description from './Description';
 import Name from './Name';
 
-const InfoCard = styled(Card)``;
+const InfoCard = styled(Card)`
+`;
 
 export {
     InfoCard as default,

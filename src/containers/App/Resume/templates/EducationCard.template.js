@@ -1,9 +1,10 @@
 import React from 'react';
 import EducationCardWrapper, * as EduCard from '../../../../components/App/Resume/EducationCard';
 
-const EducationTemplate = ({data,cardTitle}) => {
+const EducationTemplate = (props) => {
+    const {data,cardTitle,order} = props;
     return data.map((item,index) => (
-        <EducationCardWrapper key={index}>
+        <EducationCardWrapper order={order} key={index}>
             <EduCard.Title>
                 {cardTitle}
             </EduCard.Title>

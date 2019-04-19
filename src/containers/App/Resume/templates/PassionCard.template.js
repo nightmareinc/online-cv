@@ -15,9 +15,9 @@ const PassionItems = ({data}) => {
     ))
 }
 
-const PassionCardTemplate = ({data,cardTitle}) => {
+const PassionCardTemplate = ({data,cardTitle,order}) => {
     return (
-        <PassionCardWrapper>
+        <PassionCardWrapper order={order}>
             <PassionCard.Title>
                 {cardTitle}
             </PassionCard.Title>

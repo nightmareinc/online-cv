@@ -5,7 +5,8 @@ import ContactItems from './ContactItems';
 import Title from '../../common/Card/Title';
 
 
-const ContactCard = styled(Card)``;
+const ContactCard = styled(Card)`
+`;
 
 
 export {

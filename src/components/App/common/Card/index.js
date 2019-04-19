@@ -6,6 +6,7 @@ const Card = styled.section`
     color: #d3d6db;
     margin-bottom: 10px;
     width: 50%;
+    order: ${props => props.order ? Number(props.order) : 0};
     
     & * {
         color: #d3d6db;

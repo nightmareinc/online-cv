@@ -13,7 +13,7 @@ const renderContactList = (list) => (
 
 const ContactCardTemplate = (props) => {
     return (
-        <ContactCardWrapper>
+        <ContactCardWrapper order={props.order}>
             <ContactCard.Title>
                 {props.cardTitle}
             </ContactCard.Title>

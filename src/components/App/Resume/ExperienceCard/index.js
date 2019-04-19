@@ -9,7 +9,6 @@ import SectionDescription from '../../common/Card/SectionDescription';
 import SectionListWrapper from '../../common/Card/SectionListWrapper';
 
 const ExperienceCard = styled(Card)`
-    
 `;
 
 export {

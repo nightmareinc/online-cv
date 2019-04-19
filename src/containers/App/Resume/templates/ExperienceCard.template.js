@@ -14,7 +14,7 @@ const ExperienceList = ({data}) => {
                 {item.end}
             </ExpCard.SectionEndDate>
             <ExpCard.SectionSubTitle>
-                {item.company}
+                <b>Company:</b> {item.company}
             </ExpCard.SectionSubTitle>
             <ExpCard.SectionDescription>
                 {item.jobDescription}
@@ -23,9 +23,9 @@ const ExperienceList = ({data}) => {
     ));
 };
 
-const ExperienceCardTemplate = ({data,cardTitle}) => {
+const ExperienceCardTemplate = ({data,cardTitle,order}) => {
     return (
-        <ExperienceCardWrapper>
+        <ExperienceCardWrapper order={order}>
             <ExpCard.Title>
                 {cardTitle}
             </ExpCard.Title>

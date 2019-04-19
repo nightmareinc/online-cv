@@ -22,9 +22,9 @@ const SkillCardList = ({data}) => {
     ))
 }
 
-const SkillsCardTemplate = ({data,cardTitle}) => {
+const SkillsCardTemplate = ({data,cardTitle,order}) => {
     return (
-        <SkillCardWrapper>
+        <SkillCardWrapper order={order}>
             <SkillCard.Title>
                 {cardTitle}
             </SkillCard.Title>
