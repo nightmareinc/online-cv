@@ -8,7 +8,8 @@ import {
     faLeaf,
     faGamepad,
     faPalette,
-    faMusic
+    faMusic,
+    faExternalLinkAlt
 } from '@fortawesome/free-solid-svg-icons';
 import {
     faTelegramPlane
@@ -24,5 +25,6 @@ library.add(
     faLeaf,
     faGamepad,
     faPalette,
-    faMusic
+    faMusic,
+    faExternalLinkAlt
 );
