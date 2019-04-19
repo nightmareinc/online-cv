@@ -5,8 +5,17 @@ const Card = styled.section`
     border-left: 5px solid rgba(16, 19, 18, 0.8);
     color: #d3d6db;
     margin-bottom: 10px;
-    width: 50%;
     order: ${props => props.order ? Number(props.order) : 0};
+    
+    @media (max-width: 599px) {
+        flex: 1 1 100%;
+    }
+    @media (min-width: 600px) {
+        flex: 1 1 100%;
+    }
+    @media (min-width: 900px) {
+        flex-basis: 50%;
+    }
     
     & * {
         color: #d3d6db;
