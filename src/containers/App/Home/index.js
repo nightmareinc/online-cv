@@ -14,7 +14,7 @@ class Home extends Component {
                     </HomeStyled.SubTitle>
                 </HomeStyled.TitleWrapper>
                 <HomeStyled.ImageWrapper>
-                    <HomeStyled.Image src='/images/avatar.jpg'/>
+                    {/* <HomeStyled.Image src='/images/avatar.jpg'/> */}
                 </HomeStyled.ImageWrapper>
             </HomeWrapper>
         )
