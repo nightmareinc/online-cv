@@ -9,7 +9,7 @@ class Personality extends Component {
                     checkout my personality Profile <Icon icon={['fas','external-link-alt']}/>
                 </P.ExternalLink>
                 <P.ExternalLink download href='/files/Hossein Azadi - PVA Feb 2019.pdf'>
-                    Download my Personal Values Assessment Prepared by Barrett Values Centre
+                    Personal Values Assessment (Barrett Values Centre)
                 </P.ExternalLink>
             </PersonalityBox>
         );
