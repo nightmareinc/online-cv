@@ -4,7 +4,7 @@
             "firstName": "Hossein",
             "lastName": "Azadi",
             "jobTitle": "Front-End Developer",
-            "bio": "somethings catchy about yourself",
+            "bio": "i'm a junior reactjs developer with two years of experience in front-end web development with HTML, CSS, JavaScript and Jquery and a couple of projects with MERN stack. ",
             "image": "/images/avatar.jpg"
         },
         "contact": [{
@@ -34,32 +34,32 @@
             "name": "sayyed jamaleddin asadabadi university - University of Eyvanakey",
             "degree": "Bachelor",
             "field": "IT engineering",
-            "note": "I studied IT for 4 years while i was doing freelance jobs such as, SMM automation, automated CMS, managing Ecommerce websites, article translation and etc. to earn money and learn more, then i reached a point that i was not satesfied with university and i decided to drop out and start my career."
+            "note": "I studied IT engineering for almost 3 years and i had to drop out because of some personal problems."
         }],
         "experience": [{
             "begin": "March 2016",
             "end": "June 2016",
             "company": "Kajoor",
             "jobTitle": "Designer",
-            "jobDescription": "my main role was designing a logo a business card and editting product photos"
+            "jobDescription": "my main role was designing a logo and business card and editing product photos and making the ready for social media"
         }, {
             "begin": "July 2016",
             "end": "Oct 2016",
             "company": "happy kitcken",
-            "jobTitle": "Design & SMM Automation",
-            "jobDescription": "my main role was designing a logo form a small business and also co-developing a SMM automation tool (front-end app development with angular 1.6.4)"
+            "jobTitle": "SMM Automation platform",
+            "jobDescription": "co-developing a SMM automation tool with angular"
         }, {
             "begin": "Oct 2016",
             "end": "Oct 2017",
             "company": "seller.ir",
             "jobTitle": "front-end developer",
-            "jobDescription": "front-end development with Jquery and expanding business layer on a multi-layer inventroy management system"
+            "jobDescription": "as a front-end developer i designed a platform with jquery for a CRM Software"
         }, {
             "begin": "Oct 2017",
             "end": "March 2018",
             "company": "Manzoomeh Negaran Corp.",
             "jobTitle": "front-end developer",
-            "jobDescription": "front-end development JavaScript and Jquery, expanding a CRM Admin Dashboard with new features, Migrating old Admin Dashboard Pages with New ones."
+            "jobDescription": "as a front-end developer i was in charge of adapting an admin panel UI with new designs, i also created a dynamic dashboard for that admin panel with JavaScript and Jquery."
         }],
         "skills": [{
             "name": "HTML",
@@ -115,6 +115,10 @@
         }, {
             "title": "Gaming",
             "icon": ["fas", "gamepad"],
+            "img": null
+        }, {
+            "title": "React",
+            "icon": ["fab", "react"],
             "img": null
         }, {
             "title": "Nature",

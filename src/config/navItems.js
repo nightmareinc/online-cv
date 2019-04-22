@@ -19,6 +19,10 @@ const navItems = [
     //     title: 'Contact me',
     //     link: '/contactme'
     // },
+    {
+        title: 'About me',
+        link: '/aboutme'
+    },
     // {
     //     title: 'Projects',
     //     link: '/projects'

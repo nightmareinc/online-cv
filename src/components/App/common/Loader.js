@@ -25,7 +25,7 @@ const Loader = styled.div`
         margin: auto;
         height: 100px;
         width: 100px;
-        border: 3px solid #FFF;
+        border: 3px solid ${props => props.theme.darker};
         border-bottom: 3px solid transparent;
         border-radius: 50%;
         -webkit-animation: loader-3-1 1.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
@@ -51,7 +51,7 @@ const Loader = styled.div`
         margin: auto;
         width: 30px;
         height: 30px;
-        background: #FFF;
+        background: ${props => props.theme.darker};
         border-radius: 50%;
         -webkit-animation: loader-3-2 1.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
         animation: loader-3-2 1.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;

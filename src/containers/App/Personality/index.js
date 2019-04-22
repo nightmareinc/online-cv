@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import PersonalityBox from '../../../components/App/Personality';
+import PersonalityBox, * as P from '../../../components/App/Personality';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
-
 class Personality extends Component {
     render() {
         return (
             <PersonalityBox>
-                <a style={{
-                    color:'white',
-                    textDecoration:'none'
-                }} href='https://www.16personalities.com/profiles/fb16fc5fa3cc5' target='_blank'>
+                <P.ExternalLink href='https://www.16personalities.com/profiles/fb16fc5fa3cc5' target='_blank'>
                     checkout my personality Profile <Icon icon={['fas','external-link-alt']}/>
-                </a>
+                </P.ExternalLink>
+                <P.ExternalLink download href='/files/Hossein Azadi - PVA Feb 2019.pdf'>
+                    Download my Personal Values Assessment Prepared by Barrett Values Centre
+                </P.ExternalLink>
             </PersonalityBox>
         );
     }

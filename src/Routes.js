@@ -10,6 +10,7 @@ import Personality from './containers/App/Personality';
 import ContactMe from './containers/App/ContactMe';
 import Projects from './containers/App/Projects';
 import Skills from './containers/App/Skills';
+import AboutMe from './containers/App/AboutMe';
 
 const NoMatch = () => {
     return (
@@ -42,6 +43,7 @@ const Routes = () => {
                 <Route path='/contactme' exact component={ContactMe} />
                 <Route path='/projects' exact component={Projects} />
                 <Route path='/skills' exact component={Skills} />
+                <Route path='/aboutme' exact component={AboutMe} />
                 <Route component={NoMatch} />
             </Switch>
         </Layout>

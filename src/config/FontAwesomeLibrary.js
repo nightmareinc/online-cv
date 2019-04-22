@@ -12,7 +12,8 @@ import {
     faExternalLinkAlt
 } from '@fortawesome/free-solid-svg-icons';
 import {
-    faTelegramPlane
+    faTelegramPlane,
+    faReact
 } from '@fortawesome/free-brands-svg-icons';
 
 library.add(
@@ -26,5 +27,6 @@ library.add(
     faGamepad,
     faPalette,
     faMusic,
-    faExternalLinkAlt
+    faExternalLinkAlt,
+    faReact
 );

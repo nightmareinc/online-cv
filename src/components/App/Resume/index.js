@@ -8,6 +8,7 @@ const ResumeBox = styled(Box)`
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
+    font-family:  'Roboto Slab';
 `;
 
 export {
