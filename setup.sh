@@ -11,6 +11,15 @@ else
     echo "running, this might take a few seconds..."
 fi
 
+echo "pulling latest changes into server"
+git pull origin master --tags
+if [[ $? -ne 0 ]]; then
+    echo "something horribly happened! check the server status"
+    exit 2
+else
+    echo "changes applied"
+fi
+
 pid=$(netstat -antp 2>/dev/null | grep $port | head -n1 | sed -r 's/^.* ([0-9]*)\/node/\1/')
 
 if [[ -n $pid ]]; then
