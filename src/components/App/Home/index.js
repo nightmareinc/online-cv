@@ -11,7 +11,7 @@ const Home = styled(Box)`
     margin: 20px;
     font-weight: 400 !important;
     font-family: 'Roboto Slab';
-    height: calc(100vh - 110px);
+    /* height: calc(100vh - 110px); */
 `;
 
 export {
