@@ -6,6 +6,7 @@ const PassionList = styled.div`
     float: left;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 `;
 
 export default PassionList;
