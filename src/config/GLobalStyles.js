@@ -26,6 +26,11 @@ const BackgroundImage = styled.div`
     background-attachment: fixed;
     background-repeat: no-repeat;
     z-index: -5;
+
+    @media screen and (max-width: 1000px){
+        background-size: auto 100%;
+        background-position: center center;
+    }
 `;
 
 export {
