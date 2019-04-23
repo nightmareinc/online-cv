@@ -7,7 +7,7 @@ class Home extends Component {
             <HomeWrapper>
                 <HomeStyled.TitleWrapper>
                     <HomeStyled.Title>
-                        Hello<br />i'm Hossein
+                        Hello<br />I'm Hossein
                     </HomeStyled.Title>
                     <HomeStyled.SubTitle>
                         Front-end Developer
