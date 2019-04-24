@@ -19,28 +19,16 @@ else
     echo "changes applied"
 fi
 
-pid=$(sudo netstat -antp 2>/dev/null | grep $port | head -n1 | sed -r 's/^.* ([0-9]*)\/node/\1/')
-
-if [[ -n $pid ]]; then
-    sudo kill $pid
-    if [[ $? -eq 0 ]]; then
-        echo "process $pid was killed on port $port"
-    else
-        echo "failed to kill process $pid, something went wrong!"
-        exit 3
-    fi
-else
-    echo "no services are already running! skipping..."
-fi
-
-npm install &> sudo /tmp/npm-install.log
+echo "installing npm packages"
+npm install &> /tmp/npm-install.log
 if [[ $? -ne 0 ]]; then
     echo "some warnings or errors were give while installing npm packages, check log in /tmp/npm-install.log"
 else
     echo "npm packages installed"
 fi
 
-sudo npm run build &> sudo /tmp/npm-build.log
+echo "building npm packages"
+sudo npm run build &> /tmp/npm-build.log
 if [[ $? -ne 0 ]]; then
     echo "some warnings or errors reported while building npm packages, check log in /tmp/npm-build.log"
 else
@@ -52,6 +40,21 @@ if ! [[ -f $service ]]; then
     exit 4
 fi
 
+pid=$(sudo netstat -antp 2>/dev/null | grep $port | head -n1 | sed -r 's/^.* ([0-9]*)\/node/\1/')
+
+if [[ -n $pid ]]; then
+    echo "killing process $pid"
+    sudo kill $pid
+    if [[ $? -eq 0 ]]; then
+        echo "process $pid was killed on port $port"
+    else
+        echo "failed to kill process $pid, something went wrong!"
+    fi
+else
+    echo "no services are already running! skipping..."
+fi
+
+echo "running new service..."
 node $service &
 if [[ $? -eq 0 ]]; then
     echo "services are running :)"
