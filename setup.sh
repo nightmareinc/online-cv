@@ -1,6 +1,5 @@
 #!/bin/bash
 
-root_directory=hosseinazadi
 service=server.js
 port=9000
 
@@ -20,7 +19,7 @@ else
     echo "changes applied"
 fi
 
-pid=$(netstat -antp 2>/dev/null | grep $port | head -n1 | sed -r 's/^.* ([0-9]*)\/node/\1/')
+pid=$(sudo netstat -antp 2>/dev/null | grep $port | head -n1 | sed -r 's/^.* ([0-9]*)\/node/\1/')
 
 if [[ -n $pid ]]; then
     sudo kill $pid
@@ -34,33 +33,28 @@ else
     echo "no services are already running! skipping..."
 fi
 
-npm install &>/tmp/setup.log
+npm install &> sudo /tmp/npm-install.log
 if [[ $? -ne 0 ]]; then
-    echo "something went wrong while installing npm packages, cannot ignore it"
-    echo "log:"
-    cat /tmp/setup.log
-    exit 5
+    echo "some warnings or errors were give while installing npm packages, check log in /tmp/npm-install.log"
 else
     echo "npm packages installed"
 fi
 
-sudo npm run build &>/tmp/setup.log
+sudo npm run build &> sudo /tmp/npm-build.log
 if [[ $? -ne 0 ]]; then
-    echo "something went wrong while running build process, cannot ignore it"
-    exit 5
+    echo "some warnings or errors reported while building npm packages, check log in /tmp/npm-build.log"
 else
     echo "npm packages built"
 fi
 
 if ! [[ -f $service ]]; then
-    echo "server.js file does not exist, if you renamed it, modify script file on line 4 and rename it here too, otherwise check for its existance"
+    echo "$service file does not exist, if you renamed it, modify script file on line 4 and rename it here too, otherwise check for its existance"
     exit 4
 fi
 
 node $service &
 if [[ $? -eq 0 ]]; then
     echo "services are running :)"
-    rm -f setup.log
 else
     echo "failed to run server, cannot ignore it"
     exit 6
