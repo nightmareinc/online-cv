@@ -33,7 +33,7 @@
         "name": "sayyed jamaleddin asadabadi university - University of Eyvanakey",
         "degree": "Bachelor",
         "field": "IT engineering",
-        "note": "I studied IT engineering for almost 3 years and i had to drop out because of some personal problems."
+        "note": "I studied IT engineering for almost 3 years and I dropped out because of some personal problems."
     }],
     "experience": [{
         "begin": "March 2016",
@@ -52,13 +52,13 @@
         "end": "Oct 2017",
         "company": "seller.ir",
         "jobTitle": "front-end developer",
-        "jobDescription": "as a front-end developer i designed a platform with jquery for a CRM Software"
+        "jobDescription": "as a front-end developer I designed a platform with jquery for a CRM Software"
     }, {
         "begin": "Oct 2017",
         "end": "March 2018",
         "company": "Manzoomeh Negaran Corp.",
         "jobTitle": "front-end developer",
-        "jobDescription": "as a front-end developer i was in charge of adapting an admin panel UI with new designs, i also created a dynamic dashboard for that admin panel with JavaScript and Jquery."
+        "jobDescription": "as a front-end developer I was in charge of adapting an admin panel UI with new designs, I also created a dynamic dashboard for that admin panel with JavaScript and Jquery."
     }],
     "skills": [{
         "name": "HTML",
