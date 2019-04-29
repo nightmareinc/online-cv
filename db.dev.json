@@ -94,6 +94,15 @@
         }, {
             "name": "Adobe Photoshop CC",
             "level": 3
+        },{
+            "name": "Material Design",
+            "level": 3
+        },{
+            "name": "Bootstrap",
+            "level": 3
+        },{
+            "name": "Styled Components",
+            "level": 3
         }, {
             "name": "Adobe XD",
             "level": 3
