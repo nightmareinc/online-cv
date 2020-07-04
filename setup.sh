@@ -2,6 +2,7 @@
 
 root_directory=hosseinazadi
 service=server.js
+logfile=/tmp/$root_directory.log
 port=9000
 # color codes
 RED="\e[31m"
@@ -34,7 +35,7 @@ else
 fi
 
 echo -e $BLUE"installing node packages, this might take a few seconds..."$DEFAULT
-sudo npm install &>/tmp/setup.log
+sudo npm install &>$logfile
 if [[ $? -ne 0 ]]; then
     echo -e $BOLD"something went wrong while installing npm packages, cannot ignore it"$DEFAULT
     echo "log -> /tmp/setup.log"
@@ -46,7 +47,7 @@ fi
 node $service &
 if [[ $? -eq 0 ]]; then
     echo -e $GREEN"service is running in background"$DEFAULT
-    if [ -f /tmp/setup.log ]; then rm -f /tmp/setup.log; fi
+    if [ -f $logfile ]; then rm -f $logfile; fi
 else
     echo -e $BOLD"failed to run server, cannot ignore it"$DEFAULT
     exit 6
