@@ -1,5 +1,6 @@
 #!/bin/bash
 
+root_directory=hosseinazadi
 service=server.js
 port=9000
 
@@ -10,54 +11,33 @@ else
     echo "running, this might take a few seconds..."
 fi
 
-echo "pulling latest changes into server"
-git pull origin master --tags
-if [[ $? -ne 0 ]]; then
-    echo "something horribly happened! check the server status"
-    exit 2
-else
-    echo "changes applied"
-fi
-
-echo "installing npm packages"
-npm install &> /tmp/npm-install.log
-if [[ $? -ne 0 ]]; then
-    echo "some warnings or errors were give while installing npm packages, check log in /tmp/npm-install.log"
-else
-    echo "npm packages installed"
-fi
-
-echo "building npm packages"
-sudo npm run build &> /tmp/npm-build.log
-if [[ $? -ne 0 ]]; then
-    echo "some warnings or errors reported while building npm packages, check log in /tmp/npm-build.log"
-else
-    echo "npm packages built"
-fi
-
-if ! [[ -f $service ]]; then
-    echo "$service file does not exist, if you renamed it, modify script file on line 4 and rename it here too, otherwise check for its existance"
-    exit 4
-fi
-
-pid=$(sudo netstat -antp 2>/dev/null | grep $port | head -n1 | sed -r 's/^.* ([0-9]*)\/node/\1/')
+pid=$(netstat -antp 2>/dev/null | grep -E "8000.*\/node" | sed -r 's/^.*\ ([0-9]*)\/node.*$/\1/')
 
 if [[ -n $pid ]]; then
-    echo "killing process $pid"
-    sudo kill $pid
+    sudo kill $pid 2>/dev/null
     if [[ $? -eq 0 ]]; then
         echo "process $pid was killed on port $port"
     else
         echo "failed to kill process $pid, something went wrong!"
+        exit 3
     fi
 else
     echo "no services are already running! skipping..."
 fi
 
-echo "running new service..."
+sudo npm install &>/tmp/setup.log
+if [[ $? -ne 0 ]]; then
+    echo "something went wrong while installing npm packages, cannot ignore it"
+    echo "log -> /tmp/setup.log"
+    exit 5
+else
+    echo "npm packages installed"
+fi
+
 node $service &
 if [[ $? -eq 0 ]]; then
     echo "services are running :)"
+    if [ -f /tmp/setup.log ]; then rm -f /tmp/setup.log; fi
 else
     echo "failed to run server, cannot ignore it"
     exit 6
