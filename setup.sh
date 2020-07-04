@@ -20,7 +20,7 @@ else
     echo -e $BLUE"running, this might take a few seconds..."$DEFAULT
 fi
 
-pid=$(netstat -antp 2>/dev/null | grep -E "$pid.*\/node" | sed -r 's/^.*\ ([0-9]*)\/node.*$/\1/')
+pid=$(netstat -antp 2>/dev/null | grep -E "$port.*\/node" | sed -r 's/^.*\ ([0-9]*)\/node.*$/\1/')
 
 if [[ -n $pid ]]; then
     sudo kill $pid 2>/dev/null
