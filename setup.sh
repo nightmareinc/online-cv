@@ -20,7 +20,9 @@ else
     echo -e $BLUE"running, this might take a few seconds..."$DEFAULT
 fi
 
-pid=$(netstat -antp 2>/dev/null | grep -E "8000.*\/node" | sed -r 's/^.*\ ([0-9]*)\/node.*$/\1/')
+get_pid() {
+	pid=$(netstat -antp 2>/dev/null | grep -E "$pid.*\/node" | sed -r 's/^.*\ ([0-9]*)\/node.*$/\1/')
+}
 
 if [[ -n $pid ]]; then
     sudo kill $pid 2>/dev/null
@@ -41,7 +43,7 @@ if [[ $? -ne 0 ]]; then
     echo "log -> /tmp/setup.log"
     exit 5
 else
-    echo $GREEN"npm packages installed"$DEFAULT
+    echo -e $GREEN"npm packages installed"$DEFAULT
 fi
 
 node $service &
