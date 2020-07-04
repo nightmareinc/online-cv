@@ -25,7 +25,8 @@ else
     echo "no services are already running! skipping..."
 fi
 
-sudo npm install &>/tmp/setup.log
+echo "installing node packages, this might take a few seconds..."
+npm install &>/tmp/setup.log
 if [[ $? -ne 0 ]]; then
     echo "something went wrong while installing npm packages, cannot ignore it"
     echo "log -> /tmp/setup.log"
